@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
+.date{
+    font-family: "Jost", sans-serif;
+    font-optical-sizing:auto;
+    font-weight:400;
+    font-style:normal;
+    color: #606065;
+}
+.nombreTaches, .taches{
+
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:"slnt" 0;
+}
+
+.nombreTaches{
+    color: #5871DB;
+}
+.taches{
+    color: #606065;
+    text-align: center;
+    margin-top: 200px;
+}
+
+.todo{
+    /* font-size: smaller; */
+}
+
+@media screen and (min-width:480px){
+    .date{
+        font-size: x-large;
+    }
+    .nombreTaches{
+        font-size:larger;
+    }
+}

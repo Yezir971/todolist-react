@@ -1,0 +1,105 @@
+*::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#root{
+    width: 320px;
+    min-height: 400px;
+    background:#f5f5f5;
+    border-radius: 20px;
+    margin: auto;
+    padding: 22px;
+    
+}
+.headerTodolist{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pagePopup{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.16);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.6px);
+    -webkit-backdrop-filter: blur(7.6px);
+}
+.spanTacheTimer{
+    display: flex;
+    flex-direction: column;
+}
+.popUp{
+    width: 302px;
+    height: 320px;
+    margin: auto;
+    padding: 21px;
+    border-radius: 24px;
+    position: relative;
+    background: #f5f5f5;
+    animation: pop 1s ease-in-out forwards;
+    -webkit-box-shadow: 10px 10px 27px -1px rgb(212, 209, 209); 
+    box-shadow: 10px 10px 27px -1px rgb(212, 209, 209);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+@keyframes pop{
+    0%{
+        opacity: 0;
+        top: 0px;
+    }
+
+    100%{
+        opacity: 1;
+        top: 30px;
+    }
+}
+.inputTaches{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.inputSubmit{
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+.inputSubmit input{
+    background: #32BD8C;
+
+}
+.inputSubmit button{
+    background: #EAEAEC;
+}
+.inputSubmit button, .inputSubmit input{
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    height: 30px;
+    cursor: pointer;
+}
+
+
+
+
+
+@media screen and (min-width:480px){
+    #root{
+        width: 480px;
+        min-height: 600px;
+    }
+    .pagePopup{
+        width: 100vw;
+    }
+}
